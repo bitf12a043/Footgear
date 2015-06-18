@@ -1,0 +1,33 @@
+﻿@model List<project2.Models.KidsFancy>
+@{
+    Layout ="~/Views/Shared/layout2.cshtml";
+}
+<div>
+    <h2 style="font-size: 400%; text-align: center; font-family: 'Lucida Calligraphy'">Kid's Fancy</h2>
+</div>
+              
+    <div class="row">
+</div>
+
+<a href="/Cart/CheckOut"> <input type="button" value="CheckOut" /></a>
+    @foreach (var k in Model)
+    {
+        <form action="/Cart/AddtoCartKidsFancy?pid=@k.Id" method="post" enctype="multipart/form-data">
+    <div class="col-sm-6 col-md-4 hero-feature">
+        <div class="thumbnail">
+            <img src="@Url.Content(k.Images) "style="height:350px;width:350px" />
+            <div class="caption">
+                <h4>@k.Name</h4>
+                <p> $@k.Price<button type="submit" class="btn btn-primary">ADD TO CART</button></p>
+            </div>
+        </div>
+    </div>
+            </form>
+
+}
+
+      
+
+       
+
+

@@ -1,0 +1,24 @@
+﻿@model List<project2.Models.KisdsCasual>
+    @{
+    Layout ="~/Views/Shared/layout4.cshtml";
+    }
+    <div>
+        <h2 style="font-size: 400%; text-align: center; font-family: 'Lucida Calligraphy'">Kids Casual</h2>
+    </div>
+
+    <div class="row">
+    </div>
+
+    @foreach (var br in Model)
+    {
+    <div class="col-sm-6 col-md-4 hero-feature">
+        <div class="thumbnail">
+            <img src="@Url.Content(br.Images) " style="height:350px;width:350px" />
+            <div class="caption">
+                <h4>@br.Name</h4>
+                <p> @br.Price <a href="/Admin/uKidsCasual" class="btn btn-primary" role="button">UPDATE</a></p>
+            </div>
+        </div>
+    </div>
+
+    }

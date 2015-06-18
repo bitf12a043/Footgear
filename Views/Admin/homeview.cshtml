@@ -1,0 +1,158 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>layout</title>
+    <link href="~/content/bootstrap.css" rel="stylesheet" />
+    <script src="~/Script/bootstrap.js"></script>
+    <script src="jquery-2.1.4.js"> </script>
+
+</head>
+<body background="~/image/signinbg.jpg">
+    <div class="row">
+        <nav class="navbar navbar-inverse" role="navigation">
+
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header .text-info">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Footgear</a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="~/Home/Index">Home <span class="sr-only">(current)</span></a></li>
+                    <li class="active"><a href="~/Admin/homeview">View products<span class="sr-only">(current)</span></a></li>
+                    <li class="active"><a href="~/Admin/home1">Add Products<span class="sr-only">(current)</span></a></li>
+                    <li class="active"><a href="~/Admin/homedelete">Delete Products<span class="sr-only">(current)</span></a></li>
+                    <li class="active"><a href="~/Admin/homeupdate">Update Products<span class="sr-only">(current)</span></a></li>
+                </ul>
+                <div class="navbar-form navbar-left pull-right">
+
+
+                    <a href="~/Home/Index" class="btn btn-success" role="button">Logout</a>
+                </div>
+
+            </div><!-- /.navbar-collapse -->
+
+
+        </nav>
+    </div>
+
+    <div>
+        <strong class="logo">
+            <a title="View Products" class="text-center" href="#">
+                <span><font size="15" face=forte color=#FFA07A class="text-center">View Products</font></span>
+            </a>
+        </strong>
+
+
+    </div>
+    <div class="row">
+        <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <img src="~/image/c1.jpg" style=" height:350px;width:350px" />
+                <div class="caption">
+                    <h3>Women's Casual</h3>
+
+                    <p><a href="/Product/WomenCasual" class="btn btn-danger" role="button">View</a></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <img src="~/image/Wf001.jpg" style=" height:350px;width:350px" />
+                <div class="caption">
+                    <h3>Women's Fancy</h3>
+
+                    <p><a href="/Product/WomenFancy" class="btn btn-danger" role="button">View</a></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <img src="~/image/Wfo001.jpg" style=" height:350px;width:350px" />
+                <div class="caption">
+                    <h3>Women's Formal</h3>
+
+                    <p> <a href="/Product/WomenFormal" class="btn btn-danger" role="button">View</a></p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="row">
+
+        <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <img src="~/image/Mc001.jpg" style=" height:350px;width:350px" />
+                <div class="caption">
+                    <h3>Men's Casual</h3>
+                    <p> <a href="/Product/MenCasual" class="btn btn-danger" role="button">View</a></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <img src="~/image/Mf001.jpg" style=" height:350px;width:350px" />
+                <div class="caption">
+                    <h3>Men's Fancy</h3>
+                    <p><a href="/Product/MenFancy" class="btn btn-danger" role="button">View</a></p>
+                </div>
+            </div>
+        </div>
+
+         <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <img src="~/image/Mf002.jpg" style=" height:350px;width:350px" />
+                <div class="caption">
+                    <h3>Men's Formal</h3>
+                    <p><a href="/Product/MenFormal" class="btn btn-danger" role="button">View</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <div class="row">
+
+        <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <img src="~/image/kc007.jpg" style=" height:350px;width:350px" />
+                <div class="caption">
+                    <h3>Kids Casual</h3>
+                    <p> <a href="/Product/KisdsCasual" class="btn btn-danger" role="button">View</a></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <img src="~/image/Kf005.jpg" style=" height:350px;width:350px" />
+                <div class="caption">
+                    <h3>Kids Fancy</h3>
+                    <p><a href="/Product/KidsFancy" class="btn btn-danger" role="button">View</a></p>
+                </div>
+            </div>
+        </div>
+
+         <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+                <img src="~/image/Kfo005.jpg" style=" height:350px;width:350px" />
+                <div class="caption">
+                    <h3>Kids Formal</h3>
+                    <p><a href="/Product/KidsFormal" class="btn btn-danger" role="button">View</a></p>
+                </div>
+            </div>
+        </div>
+    </div>

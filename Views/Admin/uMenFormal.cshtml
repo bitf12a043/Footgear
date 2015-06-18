@@ -1,0 +1,33 @@
+﻿@model project2.Models.MenFormal
+
+@{
+    Layout = "~/Views/Shared/layout3.cshtml";
+}
+@using (Html.BeginForm("updateMenFormal", "Admin", FormMethod.Post))
+{
+    <div class="row-fluid">
+        <div class="span12 text-center">
+            <h2>Update Men's Formal</h2>
+            <br />
+
+            @Html.LabelFor(m => m.Id, "Id ", new { id = "i" })
+            @Html.TextBoxFor(m => m.Id, new { type = "text", placeholder = "Id" })
+            @Html.ValidationMessageFor(m => m.Id)
+            <br /><br />
+
+
+            @Html.LabelFor(m => m.Price, "Price ", new { id = "price" })
+            @Html.TextBoxFor(m => m.Price, new { type = "text", placeholder = "Price" })
+            @Html.ValidationMessageFor(m => m.Price)
+            <br /><br />
+
+            @Html.LabelFor(m => m.Quantity, "Quanity ", new { id = "q" })
+            @Html.TextBoxFor(m => m.Quantity, new { type = "text", placeholder = "Quantity" })
+            @Html.ValidationMessageFor(m => m.Quantity)
+            <br /><br />
+            <button type="submit" class="btn btn-success">Update</button>
+
+        </div>
+    </div>
+
+}

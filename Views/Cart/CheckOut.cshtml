@@ -1,0 +1,26 @@
+﻿@model List<project2.Models.Order>
+@{
+    ViewBag.Title = "AddtoCart";
+}
+
+<h2>AddtoCart</h2>
+<table border="1">
+    <tr>
+        <td>Product Name</td>
+        <td>Product Price</td>
+    </tr>
+
+    @foreach (var br in Model)
+    {
+        <tr>
+            <td>
+                <h4>@br.Name</h4>
+            </td>
+            <td>
+                <h4> @br.Price </h4>
+            </td>
+        </tr>
+    }
+</table>
+<a href="/Cart/GenBill"> <input type="button" class="btn-default pull-right" value="Generate Receipt" /> </a>
+<br />
